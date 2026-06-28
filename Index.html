@@ -191,35 +191,66 @@
 
         </section>
         <!-- verified section -->
-        <section class="py-16 grid md:grid-cols-1 lg:grid-cols-2 space-x-1">
-            <div>
-                <img class="w-full object-cover " src="assets/flower-store.png" alt>
-            </div>
-            <div class="ml-2">
-                <h1
-                    class="text-7xl text-amber-900 leading-tight font-bold ">Flower
-                    And
-                    <span class="text-gray-900">Plants Lover</span>
-                </h1>
-                <li class="text-lg text-gray-700 p-2 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto inventore nam dignissimos est, saepe molestias
-                    dolorum ut ea tenetur maxime placeat itaque consequuntur
-                    suscipit minima atque illo iure nobis beatae dolore. Ad
-                    minima dolore laudantium officiis, blanditiis dignissimos,
-                    reiciendis alias laboriosam ipsam praesentium nesciunt
-                    impedit placeat accusamus nihil iure explicabo.</li>
-                <li class="text-lg text-gray-700 p-2 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto inventore nam dignissimos est, saepe molestias
-                    dolorum ut ea tenetur maxime placeat itaque consequuntur
-                    suscipit minima atque illo iure nobis beatae dolore. Ad
-                    minima dolore laudantium officiis, blanditiis dignissimos,
-                    reiciendis alias laboriosam ipsam praesentium nesciunt
-                    impedit placeat accusamus nihil iure explicabo.</li>
-                <li class="text-lg text-gray-700 p-2 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto inventore nam dignissimos est, saepe  
-                    impedit placeat accusamus nihil .</li>
+        <section class="py-16 relative">
+            <!-- verified badge section -->
+            <img
+                src="assets/trusted-badge.png"
+                alt="Verified Badge"
+                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-60 z-10  " />
+            <!-- 
+                parallelly center করতে চাইলে:
+                left-1/2 -translate-x-1/2 
+
+                আর যদি vertically center করতে চাও: 
+                top-1/2 -translate-y-1/2 
                 
-            </div>
+                দুইটাই একসাথে ব্যবহার করলে:
+                 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                এটা element-কে parent-এর একদম মাঝখানে বসিয়ে দেবে।
+            -->
+
+            <!-- verified content section -->
+            <main class="grid md:grid-cols-1 lg:grid-cols-2 space-x-1">
+                <!-- image section -->
+                <div>
+                    <img class="w-full object-cover "
+                        src="assets/flower-store.png" alt>
+                </div>
+
+                <!-- verified text section -->
+                <div class="ml-2">
+                    <h1
+                        class="text-7xl text-amber-900 leading-tight font-bold ">Flower
+                        And
+                        <span class="text-gray-900">Plants Lover</span>
+                    </h1>
+                    <li class="text-lg text-gray-700 p-2 mt-5">Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit.
+                        Architecto inventore nam dignissimos est, saepe
+                        molestias
+                        dolorum ut ea tenetur maxime placeat itaque consequuntur
+                        suscipit minima atque illo iure nobis beatae dolore. Ad
+                        minima dolore laudantium officiis, blanditiis
+                        dignissimos,
+                        reiciendis alias laboriosam ipsam praesentium nesciunt
+                        impedit placeat accusamus nihil iure explicabo.</li>
+                    <li class="text-lg text-gray-700 p-2 mt-5">Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit.
+                        Architecto inventore nam dignissimos est, saepe
+                        molestias
+                        dolorum ut ea tenetur maxime placeat itaque consequuntur
+                        suscipit minima atque illo iure nobis beatae dolore. Ad
+                        minima dolore laudantium officiis, blanditiis
+                        dignissimos,
+                        reiciendis alias laboriosam ipsam praesentium nesciunt
+                        impedit placeat accusamus nihil iure explicabo.</li>
+                    <li class="text-lg text-gray-700 p-2 mt-5">Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit.
+                        Architecto inventore nam dignissimos est, saepe
+                        impedit placeat accusamus nihil .</li>
+
+                </div>
+            </main>
         </section>
 
     </body>
